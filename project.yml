@@ -7,9 +7,11 @@ targets:
   AndroidLauncher:
     type: application
     platform: iOS
-    sources: [Sources]
+    sources:
+      - path: Sources
     settings:
       base:
         INFOPLIST_FILE: Sources/Info.plist
         PRODUCT_BUNDLE_IDENTIFIER: com.example.androidlauncher
         CODE_SIGNING_ALLOWED: "NO"
+        GENERATE_INFOPLIST_FILE: "NO"
